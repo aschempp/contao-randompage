@@ -19,7 +19,9 @@
 
 
 /**
- * Frontend modules
+ * Register the classes
  */
-$GLOBALS['FE_MOD']['miscellaneous']['randompage'] = 'ModuleRandomPage';
-
+ClassLoader::addClasses(array
+(
+	'ModuleRandomPage' => 'system/modules/randompage/ModuleRandomPage.php',
+));
